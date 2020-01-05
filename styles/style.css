@@ -1,0 +1,261 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+/***************** Nav1 *****************/
+
+#nav1 {
+    height: 5vh;
+    line-height: 5vh;
+    padding: 10px;
+    background-color: black;
+}
+
+#nav1 img {
+    display: flex;
+    margin: auto;
+    width: 10%;
+}
+
+#nav1 a {
+    color: white;
+    text-decoration: none;
+}
+
+#nav1 a:not(h3) {
+    padding-left: 5vw;
+}
+
+/***************** Nav2 *****************/
+
+#nav2 {
+    display: none;
+}
+
+/***************** Main *****************/
+
+/* Accueil */
+
+#accueil {
+    height: 90vh;
+    text-align: center;
+    background-image: url("../img/IMG_2897.JPG");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#accueil h1 {
+    font-size: 300%;
+    line-height: 50vh;
+    text-shadow: 3px 3px gold;
+}
+
+#accueil h2 {
+    font-size: 200%;
+    text-shadow: 3px 3px gold;
+}
+
+.boutonaccueil {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    background-color: gold;
+}
+
+.boutonaccueil:hover {
+    background-color: white;
+    transition: all 0.4s ease-out;
+}
+
+.boutonaccueil a {
+    color: black;
+    text-decoration: none;
+    cursor: default;
+}
+
+/* Projets */
+
+#projets {
+    padding: 20px;
+}
+
+#ptut {
+    height: 70vh;
+    position: relative;
+}
+
+#ptut img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30vw;
+}
+
+/* A propos */
+
+#apropos {
+    padding: 30px;
+    position: relative;
+}
+
+#apropos>h2 {
+    padding: 10px;
+    text-shadow: 2px 2px #840032;
+}
+
+#aproposgrid {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "un deux""trois quatre""cinq six""sept huit""neuf dix""onze douze";
+}
+
+#aproposgrid p, #aproposgrid h3 {
+    padding: 20px;
+}
+
+#aproposgrid h3 {
+    text-shadow: 2px 2px gold;
+}
+
+#aproposgrid>img:nth-child(1) {
+    grid-area: un;
+}
+#aproposgrid>img:nth-child(2) {
+    grid-area: quatre;
+}
+#aproposgrid>img:nth-child(3) {
+    grid-area: cinq;
+}
+#aproposgrid>img:nth-child(4) {
+    grid-area: huit;
+}
+#aproposgrid>img:nth-child(5) {
+    grid-area: neuf;
+}
+#aproposgrid>img:nth-child(6) {
+    grid-area: douze;
+}
+#nina {
+    grid-area: deux;
+}
+#theo {
+    grid-area: trois;
+}
+#jeremy {
+    grid-area: six;
+}
+#timote {
+    grid-area: sept;
+}
+#chloe {
+    grid-area: dix;
+}
+#laura {
+    grid-area: onze;
+}
+
+/* Contact */
+
+.bgform {
+    height: fit-content;
+    padding-top: 10vh;
+}
+
+form {
+    margin: auto;
+    width: 60%;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    background-color: white;
+}
+
+label {
+    display: inline-block;
+    width: 200px;
+    text-align: left;
+}
+
+input, textarea {
+    font: 1em sans-serif;
+    width: 200px;
+    height: 25px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    border-radius: 10px;
+}
+
+input:focus, textarea:focus {
+    border-color: #000;
+}
+
+textarea {
+    vertical-align: top;
+    height: 5em;
+}
+
+button {
+    z-index: 1;
+    font-size: inherit;
+    font-family: inherit;
+    padding: 0.5em 1em;
+    outline: none;
+    border: none;
+    background-color: gold;
+}
+
+button:hover {
+    cursor: pointer;
+    animation: JEREMYO 0.5s;
+}
+
+@keyframes JEREMYO {
+0%,
+100% {
+    transform: scale(1, 1);
+}
+25% {
+    transform: scale(0.9, 1.1);
+}
+50% {
+    transform: scale(1.1, 0.9);
+}
+75% {
+    transform: scale(0.95, 1.05);
+}
+}
+
+/***************** Footer *****************/
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 2.8vh;
+}
